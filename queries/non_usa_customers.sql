@@ -3,5 +3,5 @@ SELECT firstname,
        lastname, 
        customerid,
        country
-FROM Customer C
+FROM Customer c
 WHERE country != 'USA';
