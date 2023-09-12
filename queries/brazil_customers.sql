@@ -3,5 +3,5 @@ SELECT firstname,
        lastname,
        customerid,
        country
-FROM Customer c
+FROM customer c
 WHERE country is 'Brazil';
