@@ -3,8 +3,7 @@
  -- Invoice Id,
  -- Date of the invoice
  -- Billing country
-SELECT firstname,
-       lastname,
+SELECT firstname || ' ' || lastName AS fullName,
        invoiceid,
        invoicedate,
        billingcountry
