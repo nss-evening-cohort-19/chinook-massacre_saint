@@ -1,9 +1,9 @@
-/* 
- 8. How many Invoices were there in 2009 and 2011?
+/*
+  .9 What are the respective total sales for each of those years?
 */
 
 SELECT strftime('%Y', InvoiceDate) AS Year,
-       COUNT(*) AS InvoiceCount
+  SUM(Total) AS TotalSales
 FROM Invoice
 WHERE InvoiceDate LIKE '2009%'
 OR InvoiceDate LIKE '2011%'
